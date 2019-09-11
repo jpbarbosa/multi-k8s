@@ -18,7 +18,7 @@ before_install:
   - docker build -t jpbarbosa/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true jpbarbosa/docker-react npm run test
+  - docker run -e CI=true jpbarbosa/react-test npm run test
 
 deploy:
   provider: script
