@@ -15,6 +15,7 @@ spec:
       containers:
         - name: server
           image: jpbarbosa/multi-server
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
           env:
